@@ -1,14 +1,11 @@
 [package]
 name = "pam_tbot_send"
-version = "1.0.0"
+version = "1.1.0"
 edition = "2021"
 description = "Sends information about logins in system to telegram chat (uses PAM)"
 
 [dependencies]
+lib-notify = { git = "https://github.com/eking-go/lib-notify.git", tag = "0.1.0" }
 serde_json = "1.0.111"
-serde = { version = "1.0.104", features = ["derive"] }
-chrono = "0.4.31"
-gethostname = "0.4.3"
 args = "2.2.0"
-rustelebot = "0.3.2"
 getopts = "0.2"

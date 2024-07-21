@@ -16,7 +16,10 @@ cp target/release/pam_tbot_send /usr/local/bin/pam_tbot_send
 
 then create file (default location, you can change it with `-c` option) `/etc/pam_tbot_send.json`:
 ```
-{"token": "ewfn_token", "chat": "2432154"}
+{
+  "type": "Telegram",
+  "conf": {"token": "ewfn_token", "chat": "2432154"}
+}
 ```
 
 add next line to the pam configuration (for example in the file `/etc/pam.d/common-session`):
